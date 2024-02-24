@@ -153,13 +153,13 @@ iframe {
 
 }
 
-/*FUTBOL
+/*FUTBOL*/
 
 .carrusel-futbol img{
     height: 400px;
     
 }
-*/
+
 
 /*Footer*/
 
@@ -299,28 +299,20 @@ header h2 {
 
     }
 
-    .carrusel-futbol {
-
-        display: block;
-        width: 100%;
-        height: 200px;
-    }
-
-    .carrusel-futbol img {
-        height: 100%;
-        width: 100%;
-    }
-}
-
-    /*
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
     
-        
-    }/*
 
+.carrusel-futbol{ 
+    width: 100%;
+    display: grid;
+    grid-template-areas: 1fr 1fr;
+    grid-column: span 2;
 
+       
+    
+}
+    
+
+}
 
 /**ESCRITORIO**/
     @media only screen and (min-width:1200px) {
@@ -345,4 +337,12 @@ header h2 {
 
 
         }
+        .carrusel-futbol{
+            
+            overflow: auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        
     }
