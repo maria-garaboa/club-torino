@@ -155,9 +155,9 @@ iframe {
 
 /*FUTBOL*/
 
-.carrusel-futbol img{
+.carrusel-futbol img {
     height: 400px;
-    
+
 }
 
 
@@ -299,50 +299,52 @@ header h2 {
 
     }
 
-    
 
-.carrusel-futbol{ 
-    width: 100%;
-    display: grid;
-    grid-template-areas: 1fr 1fr;
-    grid-column: span 2;
 
-       
-    
-}
-    
+    .carrusel-futbol {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 1fr 1fr;
+        grid-column: span 2;
+        justify-items: center;
+
+
+
+    }
+
 
 }
 
 /**ESCRITORIO**/
-    @media only screen and (min-width:1200px) {
-        header h2 {
-            display: inline-block;
-        }
-
-        .galeria-actividades {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        }
-
-        .galeria-servicios {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-
-        }
-
-        .galeria-servicios img {
-            width: 100%;
-            height: 400px;
-            padding: 1rem;
-
-
-        }
-        .carrusel-futbol{
-            
-            overflow: auto;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-        }
-        
+@media only screen and (min-width:1200px) {
+    header h2 {
+        display: inline-block;
     }
+
+    .galeria-actividades {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .galeria-servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .galeria-servicios img {
+        width: 100%;
+        height: 400px;
+        padding: 1rem;
+
+
+    }
+
+    .carrusel-futbol {
+
+        overflow: auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
