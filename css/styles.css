@@ -157,6 +157,8 @@ iframe {
 
 .carrusel-futbol img {
     height: 400px;
+    width: 100%;
+    gap: 10px;
 
 }
 
@@ -235,7 +237,13 @@ a {
     padding: 2rem;
     overflow: auto;
 }
+.video{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 400px;
 
+}
 
 
 
@@ -281,6 +289,9 @@ header h2 {
     text-align: center;
     padding: 1rem;
     color: rgb(4, 170, 170);
+}
+.video{
+    display: none;
 }
 
 
@@ -345,6 +356,9 @@ header h2 {
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .video{
+        display:flex;
     }
 
 }
