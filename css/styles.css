@@ -1,392 +1,353 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-}
-
-/* Header*/
-header {
-    background-color: rgb(220, 20, 20);
-    padding: 1rem;
-    overflow: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-
-}
-
-h1 {
-    font-size: 2rem;
-    color: rgb(4, 170, 170);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
-
-header h2 {
-    font-size: 2rem;
-    font-style: italic;
-}
-
-header img {
-    width: 70px;
-    height: 70px;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
-
-}
-
-
-
-/*Body*/
-.sticky {
-    z-index: 2;
+  max-width: 100%;
 }
 
 main {
-    background-color: rgb(235, 245, 247)
+  background-color: rgb(235, 245, 247);
 }
 
-.entradaclub {
-    height: 300px;
+/*VARIABLES*/
+/*TIPOGRAFIAS*/
+h3 {
+  animation-duration: 6s;
+  animation-name: sumate;
+  animation-iteration-count: infinite;
 }
 
-iframe {
+@keyframes sumate {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 2;
+  }
+}
+
+.titulossecundarios {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  color: rgb(4, 170, 170);
+  text-align: center;
+  background-color: rgb(178, 231, 231);
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  text-align: center;
+  color: rgb(4, 170, 170);
+  font-size: 1rem;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding: 3rem;
+  color: rgb(220, 20, 20);
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  color: rgb(4, 170, 170);
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font: 1rem;
+  font-weight: bold;
+  color: rgb(4, 170, 170);
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/*cajas de texto*/
+.caja1 {
+  min-height: 50px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.caja3 {
+  padding: 2rem;
+  overflow: auto;
+}
+
+header {
+  background-color: rgb(220, 20, 20);
+  padding: 1rem;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: rgb(4, 170, 170);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+/*MOBILE*/
+header h2 {
+  display: none;
+}
+
+/**ESCRITORIO**/
+@media only screen and (min-width: 1200px) {
+  header h2 {
+    display: inline-block;
+  }
+}
+
+.carrusel-futbol img {
+  height: 400px;
+  width: 100%;
+  background: rgb(178, 231, 231);
+}
+
+.carrusel-futbol video {
+  height: 400px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .carrusel-futbol {
     width: 100%;
     display: grid;
     grid-template-areas: 1fr 1fr;
     grid-column: span 2;
-
-}
-
-.descripcion {
-    text-align: justify;
-    text-align: center;
-    padding: 1rem;
-}
-
-.servicios {
-    color: rgb(220, 20, 20);
-}
-
-.cajaclub {
-
-    min-height: 80vh;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1rem;
-}
-
-.caja-club2 {
-
-    min-height: 50vh;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1rem;
-
-}
-
-.galeria-actividades {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.tarjeta-actividades {
-
-    margin: 20px;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease;
-}
-
-.tarjeta-actividades:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
-
-.tarjeta-actividades img {
-    width: 100%;
-    height: 350px;
-}
-
-
-.tarjeta-actividades .boton-info a {
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(4, 170, 170);
-    border: 1px solid rgb(4, 170, 170);
-    border-radius: 4px;
-    transition: all 400ms ease;
-
-
-}
-
-.tarjeta-actividades .boton-info a:hover {
-    background-color: rgb(4, 170, 170);
-    color: #fff;
-}
-
-.galeria-servicios {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.tarjeta-galeria {
-    margin: 20px;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease;
-}
-
-.tarjeta-galeria:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
-
-.tarjeta-galeria img {
-    width: 100%;
-    height: 350px;
-}
-
-
-.carrusel-futbol img {
-    height: 400px;
-    width: 100%;
-    background: rgb(178, 231, 231);       
-}
-
-.carrusel-futbol video {
-    height: 400px;
-    width: 100%;
-}
-h3{
-    animation-duration: 8s;
-    animation-name: sumate;
-    animation-iteration-count: infinite;
-}
-@keyframes sumate{
-    0%{opacity: 0;}
-    100%{opacity: 2;}
-}
-
-
-/*Footer*/
-
-footer {
-    background-color: rgb(220, 20, 20);
-}
-
-
-.pie {
-    text-align: center;
-    color: #fff;
-}
-
-
-/* Tipografias*/
-.titulossecundarios {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    color: rgb(4, 170, 170);
-    text-align: center;
-    background-color: rgb(178, 231, 231);
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    text-align: center;
-    color: rgb(4, 170, 170);
-    font-size: 1rem;
-}
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    padding: 3rem;
-    color: rgb(220, 20, 20);
-    text-align: center;
-}
-
-
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-align: justify;
-    color: rgb(4, 170, 170);
-}
-
-ul {
-    font-family: Arial, Helvetica, sans-serif;
-    font: 1rem;
-    font-weight: bold;
-    color: rgb(4, 170, 170);
-}
-
-a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-}
-
-
-
-/*cajas de texto*/
-.caja1 {
-
-    min-height: 50px;
-    padding: 2rem;
-    text-align: center;
-
-}
-
-.caja3 {
-    padding: 2rem;
-    overflow: auto;
-}
-
-
-
-/**MOBILE**/
-
-
-header h2 {
-    display: none;
-}
-
-.entradaclub {
-    display: none;
-}
-
-.cajaclub {
-
-    width: 100%;
-    text-align: center;
-    color: rgb(220, 20, 20);
-}
-
-.galeria-actividades {
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.galeria-servicios {
-
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.galeria-servicios img {
-    width: 100%;
-    padding: 1rem;
-}
-
-.galeria-servicios p {
-    text-align: center;
-    padding: 1rem;
-    color: rgb(4, 170, 170);
-}
-
-.video {
-    display: none;
-}
-
-
-
-/**TABLET**/
-@media only screen and (min-width:768px) {
-    .entradaclub {
-        display: inline-block
-    }
-
-    .galeria-actividades {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat 3 2fr;
-
-    }
-
-
-
-    .carrusel-futbol {
-        width: 100%;
-        display: grid;
-        grid-template-areas: 1fr 1fr;
-        grid-column: span 2;
-        justify-items: center;
-        gap: 10px;
-
-
-
-    }
-
-
+    justify-items: center;
+    gap: 10px;
+  }
 }
 
 /**ESCRITORIO**/
-@media only screen and (min-width:1200px) {
-    header h2 {
-        display: inline-block;
-    }
-
-    .galeria-actividades {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .galeria-servicios {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-
-    .galeria-servicios img {
-        width: 100%;
-        height: 400px;
-        padding: 1rem;
-
-
-    }
-
-    .carrusel-futbol {
-
-        overflow: auto;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-    }
-
-    .video {
-        display: flex;
-        align-content: center;
-    }
-
+@media only screen and (min-width: 1200px) {
+  .carrusel-futbol {
+    overflow: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
 }
+
+footer {
+  background-color: rgb(220, 20, 20);
+}
+
+.pie {
+  text-align: center;
+  color: #fff;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.sticky {
+  z-index: 2;
+}
+
+.tarjeta-actividades {
+  margin: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+.tarjeta-actividades:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.tarjeta-actividades img {
+  width: 100%;
+  height: 350px;
+}
+
+.tarjeta-actividades .boton-info a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(4, 170, 170);
+  border: 1px solid rgb(4, 170, 170);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.tarjeta-actividades .boton-info a:hover {
+  background-color: rgb(4, 170, 170);
+  color: #fff;
+}
+
+.tarjeta-galeria {
+  margin: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+.tarjeta-galeria:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.tarjeta-galeria img {
+  width: 100%;
+  height: 350px;
+}
+
+.descripcion {
+  text-align: justify;
+  text-align: center;
+  padding: 1rem;
+}
+
+.caja-club2 {
+  min-height: 50vh;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.entradaclub {
+  height: 300px;
+}
+
+iframe {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 1fr 1fr;
+  grid-column: span 2;
+}
+
+.cajaclub {
+  min-height: 80vh;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.galeria-actividades {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.galeria-servicios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*MOBILE*/
+.entradaclub {
+  display: none;
+}
+
+.cajaclub {
+  width: 100%;
+  text-align: center;
+  color: rgb(220, 20, 20);
+}
+
+.galeria-actividades {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria-servicios {
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria-servicios img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.galeria-servicios p {
+  text-align: center;
+  padding: 1rem;
+  color: rgb(4, 170, 170);
+}
+
+.video {
+  display: none;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px) {
+  .entradaclub {
+    display: inline-block;
+  }
+
+  .galeria-actividades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 3 2fr;
+  }
+}
+
+/**ESCRITORIO**/
+@media only screen and (min-width: 1200px) {
+  .galeria-actividades {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .galeria-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .galeria-servicios img {
+    width: 100%;
+    height: 400px;
+    padding: 1rem;
+  }
+
+  .video {
+    display: flex;
+    align-content: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

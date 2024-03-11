@@ -1,0 +1,116 @@
+.entradaclub {
+    height: 300px;
+}
+
+iframe {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 1fr 1fr;
+    grid-column: span 2;
+
+}
+
+.cajaclub {
+
+    min-height: 80vh;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.galeria-actividades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.galeria-servicios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*MOBILE*/
+.entradaclub {
+    display: none;
+}
+
+.cajaclub {
+
+    width: 100%;
+    text-align: center;
+    color: $color-primario;
+}
+
+.galeria-actividades {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria-servicios {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    & img {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    & p {
+        text-align: center;
+        padding: 1rem;
+        color: $color-secundario;
+    }
+}
+
+.video {
+    display: none;
+}
+
+/*TABLET*/
+
+@media only screen and (min-width:768px) {
+    .entradaclub {
+        display: inline-block
+    }
+
+    .galeria-actividades {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat 3 2fr;
+
+    }
+}
+
+/**ESCRITORIO**/
+@media only screen and (min-width:1200px) {
+    .galeria-actividades {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .galeria-servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+
+        & img {
+            width: 100%;
+            height: 400px;
+            padding: 1rem;
+
+
+        }
+    }
+
+    .video {
+        display: flex;
+        align-content: center;
+    }
+}

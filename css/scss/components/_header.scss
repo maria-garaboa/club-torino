@@ -1,0 +1,38 @@
+header {
+    background-color: $color-primario;
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    h1 {
+        font-size: 2rem;
+        color: $color-secundario;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*MOBILE*/
+header h2 {
+    display: none;
+}
+
+/**ESCRITORIO**/
+@media only screen and (min-width:1200px) {
+    header h2 {
+        display: inline-block;
+    }
+}

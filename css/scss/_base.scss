@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    background-color: rgb(235, 245, 247)
+}
+
+/*VARIABLES*/
+$color-primario: rgb(220, 20, 20);
+$color-secundario: rgb(4, 170, 170);
+$fuente-primaria: Arial, Helvetica, sans-serif;
+
+
+
+/*TIPOGRAFIAS*/
+h3 {
+    animation-duration: 6s;
+    animation-name: sumate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sumate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 2;
+    }
+}
+
+.titulossecundarios {
+    font-family: $fuente-primaria;
+    padding: 1rem;
+    color: $color-secundario;
+    text-align: center;
+    background-color: rgb(178, 231, 231);
+}
+
+h2 {
+    font-family: $fuente-primaria;
+    padding: 1rem;
+    text-align: center;
+    color: $color-secundario;
+    font-size: 1rem;
+}
+
+h3 {
+    font-family: $fuente-primaria;
+    font-size: 2rem;
+    padding: 3rem;
+    color: $color-primario;
+    text-align: center;
+}
+
+
+
+p {
+    font-family: $fuente-primaria;
+    font-size: 1rem;
+    text-align: justify;
+    color: $color-secundario;
+}
+
+ul {
+    font-family: $fuente-primaria;
+    font: 1rem;
+    font-weight: bold;
+    color: $color-secundario;
+}
+
+a {
+    font-family: $fuente-primaria;
+    font-size: 1rem;
+}
+
+
+
+/*cajas de texto*/
+.caja1 {
+
+    min-height: 50px;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.caja3 {
+    padding: 2rem;
+    overflow: auto;
+}
