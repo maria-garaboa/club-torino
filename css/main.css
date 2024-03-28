@@ -20,6 +20,7 @@ main {
   background-color: rgb(235, 245, 247);
 }
 
+/*VARIABLES*/
 /*TIPOGRAFIAS*/
 h3 {
   animation-duration: 6s;
@@ -31,10 +32,12 @@ h3 {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 2;
   }
 }
+
 .titulossecundarios {
   font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
@@ -100,7 +103,7 @@ header {
   flex-direction: row;
 }
 
-h1 {
+header h1 {
   font-size: 2rem;
   color: rgb(4, 170, 170);
   font-family: Arial, Helvetica, sans-serif;
@@ -110,6 +113,7 @@ h1 {
 header h2 {
   font-size: 2rem;
   font-style: italic;
+  color: #fff;
 }
 
 header img {
@@ -128,10 +132,12 @@ header h2 {
     display: inline-block;
   }
 }
+
 .carrusel-futbol img {
   height: 400px;
   width: 100%;
   background: rgb(178, 231, 231);
+  object-fit: cover;
 }
 
 .carrusel-futbol video {
@@ -149,6 +155,7 @@ header h2 {
     gap: 10px;
   }
 }
+
 /**ESCRITORIO**/
 @media only screen and (min-width: 1200px) {
   .carrusel-futbol {
@@ -159,8 +166,13 @@ header h2 {
     width: 100%;
   }
 }
+
 footer {
   background-color: rgb(220, 20, 20);
+}
+
+footer ul {
+  color: #fff;
 }
 
 .pie {
@@ -193,6 +205,7 @@ footer {
 .tarjeta-actividades img {
   width: 100%;
   height: 350px;
+  object-fit: cover;
 }
 
 .tarjeta-actividades .boton-info a {
@@ -226,6 +239,7 @@ footer {
 .tarjeta-galeria img {
   width: 100%;
   height: 350px;
+  object-fit: cover;
 }
 
 .descripcion {
@@ -313,28 +327,35 @@ iframe {
   .entradaclub {
     display: inline-block;
   }
+
   .galeria-actividades {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat 3 2fr;
   }
 }
+
 /**ESCRITORIO**/
 @media only screen and (min-width: 1200px) {
   .galeria-actividades {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+
   .galeria-servicios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .galeria-servicios img {
     width: 100%;
     height: 400px;
     padding: 1rem;
   }
+
   .video {
     display: flex;
     align-content: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
